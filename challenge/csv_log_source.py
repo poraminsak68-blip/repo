@@ -10,6 +10,6 @@ class CsvLogSource(ILogSource):
         logs = []
         with open(self.filename, newline='', encoding='utf-8') as file:
             reader = csv.reader(file)
-            for row in reader:
+            for row in reader: 
                 logs.append(row)
-        return logs
+        return logs     
